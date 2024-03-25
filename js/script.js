@@ -4,33 +4,33 @@
 
 //Immagazzino così la risposta dell'utente nella variabile UserName, dalla risposta che quest'ultimo darà al prompt
 
-let UserName = prompt("Inserisci il tuo Nome"); //String
-console.log(UserName, typeof UserName);
+let userName = prompt("Inserisci il tuo Nome"); //String
+console.log(userName, typeof userName);
 
 //Immagazzino così la risposta dell'utente nella variabile UserSurname, dalla risposta che quest'ultimo darà al prompt
 
-let UserSurname = prompt("Inserisci il tuo Cognome"); //String
-console.log(UserSurname, typeof UserSurname);
+let userSurname = prompt("Inserisci il tuo Cognome"); //String
+console.log(userSurname, typeof userSurname);
 
 //Immagazzino così la risposta dell'utente nella variabile UserColor, dalla risposta che quest'ultimo darà al prompt
 
-let UserColor = prompt("Qual è il tuo colore preferito?"); //String
-console.log(UserColor, typeof UserColor);
+let userColor = prompt("Qual è il tuo colore preferito?"); //String
+console.log(userColor, typeof userColor);
 
 //Ora alle risposte che l'utente ha dato al prompt, assegno il numero randomico finale, servendomi di una funzione
 
-const RandomNumber = Math.floor(Math.random() * 100); //Number
-console.log(RandomNumber);
+const randomNumber = Math.floor(Math.random() * 100); //Number
+console.log(randomNumber);
 
 //Stampo la sequenza full in console
 
-const UserPsw = UserName + UserSurname + UserColor + RandomNumber; //String
-console.log(UserPsw, typeof UserPsw);
+const userPsw = userName + userSurname + userColor + randomNumber; //String
+console.log(userPsw, typeof userPsw);
 
 //Vedo il risultato corretto lo stampo all'interno della pagina
 
-const UserPswGenerated = `
-                            Ho generato la tua Psw sgamabilissima ed è <strong> ${UserPsw} </strong>
+const userPswGenerated = `
+                            Ho generato la tua Psw sgamabilissima ed è <strong> ${userPsw} </strong>
                         `
 
-document.getElementById("result").innerHTML = UserPswGenerated;
+document.getElementById("result").innerHTML = userPswGenerated;
